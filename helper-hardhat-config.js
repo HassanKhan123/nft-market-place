@@ -25,6 +25,9 @@ const networkConfig = {
 const DECIMALS = "18";
 const INITIAL_PRICE = "200000000000000000000";
 const VERIFICATION_BLOCK_CONFIRMATIONS = 6;
+const frontEndContractsFile =
+  "../nextjs-nft-market-place-moralis/constants/networkMapping.json";
+const frontEndAbiLocation = "../nextjs-nft-market-place-moralis/constants/";
 
 const developmentChains = ["hardhat", "localhost"];
 
@@ -34,4 +37,6 @@ module.exports = {
   DECIMALS,
   INITIAL_PRICE,
   VERIFICATION_BLOCK_CONFIRMATIONS,
+  frontEndContractsFile,
+  frontEndAbiLocation,
 };
