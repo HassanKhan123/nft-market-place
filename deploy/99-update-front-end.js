@@ -10,7 +10,7 @@ module.exports = async () => {
   if (UPDATE_FRONT_END) {
     console.log("Writing to front end...");
     await updateContractAddresses();
-    // await updateAbi();
+    await updateAbi();
     console.log("Front end written!");
   }
 };
@@ -25,10 +25,6 @@ async function updateAbi() {
   const basicNft = await ethers.getContract("BasicNft");
   fs.writeFileSync(
     `${frontEndAbiLocation}BasicNft.json`,
-    basicNft.interface.format(ethers.utils.FormatTypes.json)
-  );
-  fs.writeFileSync(
-    `${frontEndAbiLocation2}BasicNft.json`,
     basicNft.interface.format(ethers.utils.FormatTypes.json)
   );
 }
