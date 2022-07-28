@@ -28,6 +28,9 @@ const VERIFICATION_BLOCK_CONFIRMATIONS = 6;
 const frontEndContractsFile =
   "../nextjs-nft-market-place-moralis/constants/networkMapping.json";
 const frontEndAbiLocation = "../nextjs-nft-market-place-moralis/constants/";
+const frontEndContractsFile2 =
+  "../nextjs-nft-market-place-the-graph/constants/networkMapping.json";
+const frontEndAbiLocation2 = "../nextjs-nft-market-place-the-graph/constants/";
 
 const developmentChains = ["hardhat", "localhost"];
 
@@ -39,4 +42,6 @@ module.exports = {
   VERIFICATION_BLOCK_CONFIRMATIONS,
   frontEndContractsFile,
   frontEndAbiLocation,
+  frontEndContractsFile2,
+  frontEndAbiLocation2,
 };
